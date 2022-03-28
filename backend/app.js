@@ -35,7 +35,7 @@ mongoose.connect(`mongodb+srv://${process.env.BD_USERNAME}:${process.env.BD_SECR
 //Limiter le temps de chaque session
 const limiter = rateLimit({
     windowMs: 20 * 60 * 1000, // 20 minutes 
-    max: 100, // Limite chaque IP à 100 requêtes par `window` (ici, par 15 minutes ) 
+    max: 100, // Limite chaque IP à 100 requêtes par `window` (ici, par 20 minutes ) 
     standardHeaders: true, // Renvoie les informations de limite de débit dans les en-têtes `RateLimit-*` 
     legacyHeaders: false, // Désactive les en-têtes `X-RateLimit-*` 
 });
