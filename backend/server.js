@@ -1,4 +1,4 @@
-//j'importe le package http de node
+//j'importe le package http de node pour créer mon server
 const http = require('http');
 
 //j'importe l'application
@@ -46,6 +46,7 @@ const errorHandler = error => {
 
 //je crée mon serveur
 const server = http.createServer(app);
+
 //gestion d'erreur
 server.on('error', errorHandler);
 //ecoute du port d'execution du serveur

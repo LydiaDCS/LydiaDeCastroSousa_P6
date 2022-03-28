@@ -1,8 +1,9 @@
-//j'importe dotenv
+/*j'importe dotenv pour gérer les variables d'environnement
+.env*/
 require('dotenv').config();
 //console.log(process.env);
 
-//j'importe express
+//j'importe express pour créer plus facilement mon server
 const express = require('express');
 
 //Pour empêcher les attaques par injection de sélecteur de requête: nettoyer les données reçues
@@ -14,7 +15,7 @@ const helmet = require('helmet');
 //j'importe express-rate-limit pour limiter les requêtes
 const rateLimit = require('express-rate-limit');
 
-//j'importe mongosse
+//j'importe mongosse - gestion de ma base de données
 const mongoose = require('mongoose');
 
 //Accès au chemin de notre système de fichiers

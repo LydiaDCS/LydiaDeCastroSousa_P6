@@ -6,10 +6,11 @@ const router = express.Router();
 
 //j'importe middleware d'authentification
 const auth = require('../middleware/auth');
-//j'importe middleware gestion enregistrement de fichiers
+
+//j'importe middleware gestion enregistrement de fichiers (pour fichier images)
 const multer = require('../middleware/multer-config');
 
-//j'importe les controllers
+//j'importe les controllers (requêtes)
 const saucesCtrl = require('../controllers/sauce');
 
 
